@@ -1,0 +1,403 @@
+
+/* Kanbas Navigation Bar*/
+.border-nav {
+    width: 85;
+    height: 100%;
+    margin-left:-20px;
+    font-size: 15px;
+    align-items: center;
+}
+.dog-logo {
+    padding: 10px;
+    color:red;
+    padding-bottom: 30px;
+    margin-left: -5px;
+    align-items: center;
+ }
+ 
+ .logo {
+     margin-left: 15px;
+     padding: 5px;
+     align-items: center;
+     color:red;
+ }
+  
+ .sidebar-select {
+     background-color: white;
+     color:red;
+     padding: 5px;
+ }
+ 
+ .sidebar-text {
+     color:white;
+     background-color:black;
+     padding: 5px;
+     text-align:center;
+     align-items:center;
+     text-wrap:10px;
+ }
+ 
+ .icon-select {
+     color:gray;
+    background-color: white;
+     padding: 10px;
+     padding-left: 20px;
+ 
+ }
+ 
+ .icon-non-select {
+     color: red;
+     background-color: black;
+     padding: 10px;
+     padding-left: 20px;
+ }
+
+ .collapse-all-style {
+    background-color: lightgrey;
+    color: black;
+    border: black;
+    outline-color: black;
+    outline-width: 10px;
+    border-width: 2px;
+    display: inline-block;
+ }
+
+/* Spacing General*/
+.spacing {
+    padding: 5;
+    text-align:center;
+    line-height: 0;
+    text-align: center;
+    align-items:center;
+}
+
+.dog-logo {
+    align-items: center;
+    padding: 10px;
+    color:red;
+    padding-bottom: 30px;
+ }
+ 
+ .logo {
+     margin-left: 15px;
+     padding: 5px;
+     align-items: center;
+     color:red;
+ }
+  
+ .sidebar-select {
+     background-color: white;
+     color:red;
+     padding: 5px;
+ }
+ 
+ .sidebar-text {
+     color:white;
+     background-color:black;
+     padding: 5px;
+     
+ }
+ 
+ .icon-select {
+     color:gray;
+    background-color: white;
+     padding: 10px;
+     padding-left: 20px;
+ 
+ }
+ 
+ .icon-non-select {
+     color: red;
+     background-color: black;
+     padding: 10px;
+     padding-left: 20px;
+     
+ }
+
+ /* Account Navigation Bar */
+.inner-sidebar-non-select {
+    border-top: 0px;
+    border-bottom: 0 none;
+    border-right: 0px; 
+    color:Red;
+    text-decoration: none;
+    padding: 5px;
+    display:block;
+    margin-left: -120px;
+    top: 30px;
+}
+
+.inner-sidebar-select {
+     border-top: 0px;
+    border-bottom: 0px;
+    border-right: 0px; 
+    color:black;
+    border-left: 7px solid black;
+    margin-left: -120px;
+    padding:10px;
+    top: 30px;
+}
+
+
+.btn-primary.override-bs {
+    background-color: lightgrey;
+    color: black;
+border-color:gray;
+position: absolute;
+top: 3%;
+left: 60%;
+}
+
+
+.edit-profile-btn {
+    background-color: lightgrey;
+    color: black;
+border-color:gray;
+    border-style: round;
+    position: relative;
+    top: 5%;
+    left: 55%;
+}
+
+.save-profile-btn {
+    background-color: red;
+    color: white;
+border-color:darkred;
+    border-style: round;
+    position: relative;
+    top: 5%;
+    left: 55%;
+}
+
+.btn-cancel-profile{
+    background-color: lightgrey;
+    color: black;
+border-color:gray;
+    border-style: round;
+    position: relative;
+    top: 95%;
+    left: 55%;
+}
+
+.btn-save-profile {
+    background-color: red;
+    color: white;
+    border-style: round;
+    position: relative;
+    top: 95%;
+    left: 55%;
+}
+
+.text-area-sm {
+    width: 400px;
+    height: 10px;
+}
+
+.text-area-bio {
+    width: 400px;
+    height: 30 px;
+}
+
+.link-row-width {
+    width: 55%;
+}
+.dash-head {
+    margin-left: 25px;
+}
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .wd-flex-grow-1 {
+    flex-grow: 1;
+  }
+  .wd-width-75px {
+    width: 85px;
+    margin: 35px;
+  }
+
+.course-card {
+    width: 18rem;
+     margin: 30px;
+     margin-left: 25px;
+}
+
+.course-box {
+    margin: 30 px;
+    width: 250 px;
+    height: 200px;
+    background-color: lightcyan;
+}
+
+.breadcrumb-1 {
+    --bs-breadcrumb-divider: '>';
+}
+
+.module-margin {
+    margin: 10px;
+    padding: 5px;
+}
+
+.module-list {
+    margin-left: -160px;
+}
+
+.dashboard-margin {
+    margin-left: -100px;
+}
+
+.check-end-margin {
+    margin-right: 3px;
+    padding: 5px;
+}
+.ellipsis-end-margin {
+    margin-left: 500px;
+    margin-top: 5px;
+    padding: 5px;
+    text-align:center;
+}
+
+.check-color {
+    color:green;
+}
+
+.module-buttons-gray {
+    background-color: lightgray;
+    color: black;
+border-color:gray;
+    border-style: round;
+    border-width: 1px;
+    width: 125px;
+    display:inline-block;
+    margin: 5px;
+    padding: 5px;
+    text-align:center;
+    height:40px;
+
+}
+
+.module-buttons-gray-publish {
+    background-color: lightgray;
+    color: black;
+border-color:gray;
+    border-style: round;
+    border-width: 1px;
+    width: 140px;
+    display:inline-block;
+    margin: 5px;
+    padding: 5px;
+    height: 40px;
+    font-size:14px;
+    text-align:center;
+
+}
+
+.module-buttons-red {
+    color: white;
+    border-style: round;
+    margin: 5px;
+    padding: 8px;
+    width: 125px;
+    text-align:center;
+
+}
+
+.btn-group {
+    display: inline-block;
+}
+
+.course-stat-btn {
+    font-size: 13px;
+    padding:3px;
+}
+
+.link-style {
+    color:red;
+    text-decoration: none;
+    list-style-type: none;
+    text-indent: 10%;
+}
+
+.publish-btn {
+    background-color: green;
+}
+
+.student-view-btn {
+    background-color: lightgrey;
+    color: black;
+    width: 150px;
+    height: 35px;
+    top: 0px;
+    margin-top: 5px;
+    font-size: 13;
+    position: relative;
+    top: -40px;
+    border-width: 1px; 
+    border-color:darkgray;
+}
+
+.col-4-btn-style {
+    background-color: lightgrey;
+    color: black;
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 13;
+  
+    right: 40px;
+    position: relative;
+    border-width: 1px; 
+    border-color:darkgray;
+}
+
+.assignment-group-btn {
+    background-color: lightgrey;
+    color: black;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 13;
+    position: relative;
+    top: 5%;
+    left: 15%;
+    border-width: 1px; 
+    border-color:darkgray;
+}
+
+.search-assign-text-area {
+    width: 200px;
+    height: 10px;
+    position: relative;
+    top: 50%;
+    left: -30%;
+    bottom: -15px;
+}
+
+.assignment-add-btn {
+    background-color: red;
+    color: white;
+border-color:darkred;
+    border-style: round;
+    position: relative;
+    top: 5%;
+    
+    left: 15%;
+}
+
+.submission-box {
+    border-color: darkgray;
+    border-width: 10px;
+}
+
+.edit-assignment-save {
+    background-color:red;
+    color: white;
+    border-style: round;
+}
+
+.search-assmnts-students {
+    width: 300px;
+}
+
+
+
