@@ -5,7 +5,7 @@
 <link href="../../../vendors/fontawesome/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet" />
 <link href="../../index.css" rel="stylesheet" />
 
-<div class="row fa-1x" style="margin-left: 10px; top:10px; position: relative;">
+ <div class="row fa-1x" style="margin-left: 10px; top:10px; position: relative;">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb breadcrumb-1">
             <li class="breadcrumb-item"><a href="../home.html" class="link-danger">CS5560.11744.202310</a></li>
@@ -15,10 +15,10 @@
 </div>
 
 <button type="button" class="student-view-btn float-end"> <i class="fa fa-plus float-end check-end-margin"
-    aria-hidden="true"></i> <i class="fas fa-glasses"></i> Student View </button>
+        aria-hidden="true"></i> <i class="fas fa-glasses"></i> Student View </button>
 
 </br>
-<hr/>
+<hr />
 <div class="row">
     <div class="col-12 col-md-3 col-xl-2 d-none d-xl-block d-lg-block d-md-block d-xxl-none fa-1x wbr">
         <ul>
@@ -28,7 +28,7 @@
                     <li class="navbar ">
                         <i class="fas fa-dog fa-2x dog-logo"></i>
                         </br>
-    
+
                     </li>
                 </div>
 
@@ -36,7 +36,7 @@
                     <li class="navbar  ">
                         <i class="fas fa-user-alt fa-2x icon-non-select"></i>
 
-                        <a class="nav-link sidebar-text" href="./profile/index.html">Account</a>
+                        <a class="nav-link sidebar-text" href="../profile/index.html">Account</a>
 
                     </li>
                 </div>
@@ -46,7 +46,7 @@
 
                         <i class="fas fa-tachometer-alt fa-2x icon-non-select"></i>
 
-                        <a class="nav-link sidebar-text" href="../dashboard/index.html">
+                        <a class="nav-link sidebar-text" href="../../dashboard/index.html">
 
                             Dashboard</a>
 
@@ -57,7 +57,7 @@
                     <li class="navbar   bg-white">
                         <i class="fas fa-book fa-2x icon-select "></i>
 
-                        <a class="nav-link sidebar-select" href="#">Courses</a>
+                        <a class="nav-link sidebar-select" href="../home.html">Courses</a>
 
                     </li>
                 </div>
@@ -129,11 +129,11 @@
                 Piazza</a>
             <a href="#" class="list-group-item list-group-item-action inner-sidebar-non-select">
                 Zoom Meetings</a>
-            <a href="../assignments/index.html" class="list-group-item list-group-item-action inner-sidebar-select">
+            <a href="../assignments/index.html" class="list-group-item list-group-item-action inner-sidebar-non-select">
                 Assignments</a>
             <a href="#" class="list-group-item list-group-item-action inner-sidebar-non-select">
                 Quizzes</a>
-            <a href="../grades/index.html" class="list-group-item list-group-item-action inner-sidebar-non-select">
+            <a href="../grades/index.html" class="list-group-item list-group-item-action inner-sidebar-select">
                 Grades</a>
             <a href="#" class="list-group-item list-group-item-action inner-sidebar-non-select">
                 People</a>
@@ -157,40 +157,65 @@
         </div>
     </div>
     <div class="col-12 col-md-6 col-xl-7 ">
-        <button type="button" class="float-end" style="position: relative; right:100px; height: 30px;"> <i class="fas fa-file-import" style="color: #4c4c4d;"></i> Import</button>
-             <select  style="position: relative; right:-470px; height: 30px;"">
-                <option selected value="Export">
-                    <i class="fas fa-cog " style="color: #545454;"></i> Export All</option>
-             </select>
-             <button type="button" style="position: relative; right:-560px; height: 30px;"> <i class="fas fa-cog float-end" style="color: #545454;"></i></button>
-           
-             <label for="student-names" style="top: 50px; position: relative; right:127px;">
-                <h6> Student Names </h6>
-              </label>
-            </br>
-              <input type="name"
-                    placeholder="Search Students"
-                    id="student-names" class="search-assmnts-students" style="top: 50px; position: relative;"/><br/>
-                <label for="assignment-names" class="float-end" style="position: relative; right:200px;">
-                 <h6> Assignment Names</h6>
-                </label>  
-            </br>
-                <input type="name"
-                placeholder="Search Assignments"
-                id="assignment-names" class="search-assmnts-students float-end"style="position: relative; right:-100px;"/>
-                <br/>
-                <br/>
-               <button type="button"> <i class="fas fa-filter" style="color: #3e3f41;"></i> Apply Filters</button>
+        <button type="button" class="float-end" style="position: relative; right:100px; height: 30px;"> <i
+                class="fas fa-file-import" style="color: #4c4c4d;"></i> Import</button>
+        <select style="position: relative; right:-470px; height: 30px;"">
+                <option selected value=" Export">
+            <i class="fas fa-cog " style="color: #545454;"></i> Export All</option>
+        </select>
+        <button type="button" style="position: relative; right:-560px; height: 30px;"> <i class="fas fa-cog float-end"
+                style="color: #545454;"></i></button>
+
+        <label for="student-names" style="top: 50px; position: relative; right:127px;">
+            <h6> Student Names </h6>
+        </label>
         </br>
-    </br>
-<table class="table table-bordered table-striped table-hover">
-   <thead>
-   <tr class="table-"><th>Student Name</th><th>A1 SETUP</th><th>A2 HTML</th><th>A3 CSS</th></tr>
-   </thead>
-   <tbody>
-   <tr class="table"><td>Zeta Timmy</td><td>99</td><td>100</td><td>85</td></tr>
-   <tr class="table"><td>Courtney Chad</td><td>100</td><td>80</td><td>90</td></tr>
-   <tr class="table"><td>Jesse Deb</td><td>24</td><td> 48</td><td>90</td></tr>
-   </tbody>
-  
-</table>
+        <input type="name" placeholder="Search Students" id="student-names" class="search-assmnts-students"
+            style="top: 50px; position: relative;" /><br />
+        <label for="assignment-names" class="float-end" style="position: relative; right:200px;">
+            <h6> Assignment Names</h6>
+        </label>
+        </br>
+        <input type="name" placeholder="Search Assignments" id="assignment-names"
+            class="search-assmnts-students float-end" style="position: relative; right:-100px;" />
+        <br />
+        <br />
+        <button type="button"> <i class="fas fa-filter" style="color: #3e3f41;"></i> Apply Filters</button>
+        </br>
+        </br>
+
+        <div class="table-responsive"  style="overflow-x:auto;">
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+                    <tr class="table-">
+                        <th>Student Name</th>
+                        <th>A1 SETUP</th>
+                        <th>A2 HTML</th>
+                        <th>A3 CSS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table">
+                        <td>Zeta Timmy</td>
+                        <td>99</td>
+                        <td>100</td>
+                        <td>85</td>
+                    </tr>
+                    <tr class="table">
+                        <td>Courtney Chad</td>
+                        <td>100</td>
+                        <td>80</td>
+                        <td>90</td>
+                    </tr>
+                    <tr class="table">
+                        <td>Jesse Deb</td>
+                        <td>24</td>
+                        <td> 48</td>
+                        <td>90</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    </div>
