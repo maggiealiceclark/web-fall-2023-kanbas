@@ -5,16 +5,17 @@
 <link href="../../../vendors/fontawesome/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet" />
 <link href="../../index.css" rel="stylesheet" />
 
-<div class="row fa-1x" style="margin-left: 10px; top:20px;">
+<div class="row fa-1x breadcrumb-style">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb breadcrumb-1">
+            <li class="breadcrumb-item"><a href="home.html" class="link-danger">CS4550.126s</a></li>
             <li class="breadcrumb-item"><a href="home.html" class="link-danger">Assignments</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Edit</li>
+            <li class="breadcrumb-item active" aria-current="page">A1 - ENV + HTML</li>
         </ol>
     </nav>
 </div>
 
-<button type="button" class="student-view-btn float-end"> <i class="fa fa-plus float-end check-end-margin"
+<button type="button" class="student-view-btn float-end rounded"> <i class="fa fa-plus float-end check-end-margin"
     aria-hidden="true"></i> <i class="fas fa-glasses"></i> Student View </button>
 
 </br>
@@ -203,33 +204,33 @@
         </select>
 
     </div>
-    <div class= "container">
-    <div class="mb-3">
-        <label for="submission-type">Submission Type
-        </label>
-        <select id="submission-type">
-            <option selected value="ONLINE">Online </option>
-        </select>
-        <p class="fw-bold">Online Entry Options</p>
-        <input type="checkbox" selected value="TEXTENTRY"
-      name="entry-options" id="chkbox-textentry" />
-<label for="chkbox-textentry">Text Entry</label>    <br/>
-<input type="checkbox" value="WEBSITEURL"
-      name="entry-options" id="chkbox-website-url"/>
-<label for="chkbox-website-url">Website URL</label>    <br/>
-<input type="checkbox" value="MEDIARECORDINGS"
-      name="entry-options" id="chkbox-media-recordings"/>
-<label for="chkbox-media-recordings">Media Recordings</label> <br/>
-<input type="checkbox" value="STUDENTANNOTATIONS"
-      name="entry-options" id="chkbox-student-annotations"/>
-<label for="chkbox-student-annotations">Student Annotation</label> </br>
-<input type="checkbox" value="FILEUPLOADS"
-      name="entry-options" id="chkbox-file-uploads"/>
-<label for="chkbox-file-uploads">File Uploads</label> 
-    </div>
-</div>
 
-<div class=" mb-3 container">
+        <div class=" border border-secondary rounded mb-3" style="padding: 10px; width:300px;">
+            <label for="submission-type">Submission Type
+            </label>
+            <select id="submission-type">
+                <option selected value="ONLINE">Online </option>
+            </select>
+            <p class="fw-bold">Online Entry Options</p>
+            <input type="checkbox" selected value="TEXTENTRY"
+          name="entry-options" id="chkbox-textentry" />
+    <label for="chkbox-textentry">Text Entry</label>    <br/>
+    <input type="checkbox" value="WEBSITEURL"
+          name="entry-options" id="chkbox-website-url"/>
+    <label for="chkbox-website-url">Website URL</label>    <br/>
+    <input type="checkbox" value="MEDIARECORDINGS"
+          name="entry-options" id="chkbox-media-recordings"/>
+    <label for="chkbox-media-recordings">Media Recordings</label> <br/>
+    <input type="checkbox" value="STUDENTANNOTATIONS"
+          name="entry-options" id="chkbox-student-annotations"/>
+    <label for="chkbox-student-annotations">Student Annotation</label> </br>
+    <input type="checkbox" value="FILEUPLOADS"
+          name="entry-options" id="chkbox-file-uploads"/>
+    <label for="chkbox-file-uploads">File Uploads</label> 
+        </div>
+    
+
+<div class=" border border-secondary rounded mb-3" style="padding: 10px; width:300px;">
     <label for="assignto"> Assign to
     </label>
     </br>

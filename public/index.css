@@ -1,26 +1,22 @@
 
 /* Kanbas Navigation Bar*/
 .border-nav {
-    width: 85;
+    width: 90;
     height: 100%;
     margin-left:-20px;
     font-size: 15px;
     align-items: center;
+    top: 0px;
 }
+
 .dog-logo {
     padding: 10px;
     color:red;
-    padding-bottom: 30px;
     margin-left: -5px;
     align-items: center;
+    padding-bottom: -10px;
  }
  
- .logo {
-     margin-left: 15px;
-     padding: 5px;
-     align-items: center;
-     color:red;
- }
   
  .sidebar-select {
      background-color: white;
@@ -48,23 +44,26 @@
  .icon-non-select {
      color: red;
      background-color: black;
-     padding: 10px;
+     padding: 5px;
      padding-left: 20px;
  }
 
- .collapse-all-style {
-    background-color: lightgrey;
+ .btn-secondary.override-collapse-bs {
+    background-color: rgb(234, 234, 234)
+;
     color: black;
     border: black;
     outline-color: black;
     outline-width: 10px;
     border-width: 2px;
     display: inline-block;
+    font-size: 20px;
  }
 
 /* Spacing General*/
 .spacing {
     padding: 5;
+    padding-bottom: 2px;
     text-align:center;
     line-height: 0;
     text-align: center;
@@ -75,7 +74,7 @@
     align-items: center;
     padding: 10px;
     color:red;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
  }
  
  .logo {
@@ -89,12 +88,14 @@
      background-color: white;
      color:red;
      padding: 5px;
+     text-indent: 4px;
  }
  
  .sidebar-text {
      color:white;
      background-color:black;
      padding: 5px;
+     text-indent: 4px;
      
  }
  
@@ -140,7 +141,8 @@
 
 
 .btn-primary.override-bs {
-    background-color: lightgrey;
+    background-color: rgb(234, 234, 234)
+;
     color: black;
 border-color:gray;
 position: absolute;
@@ -150,7 +152,8 @@ left: 60%;
 
 
 .edit-profile-btn {
-    background-color: lightgrey;
+    background-color: rgb(234, 234, 234)
+;
     color: black;
 border-color:gray;
     border-style: round;
@@ -170,7 +173,7 @@ border-color:darkred;
 }
 
 .btn-cancel-profile{
-    background-color: lightgrey;
+    background-color: rgb(234, 234, 234);
     color: black;
 border-color:gray;
     border-style: round;
@@ -231,6 +234,7 @@ border-color:gray;
 
 .breadcrumb-1 {
     --bs-breadcrumb-divider: '>';
+    padding: 10px;
 }
 
 .module-margin {
@@ -262,43 +266,40 @@ border-color:gray;
 }
 
 .module-buttons-gray {
-    background-color: lightgray;
+    background-color: rgb(234, 234, 234);
     color: black;
-border-color:gray;
-    border-style: round;
-    border-width: 1px;
     width: 125px;
     display:inline-block;
     margin: 5px;
     padding: 5px;
     text-align:center;
     height:40px;
+    font-size: 16px;
 
 }
 
 .module-buttons-gray-publish {
-    background-color: lightgray;
+    background-color: rgb(234, 234, 234);
     color: black;
-border-color:gray;
-    border-style: round;
-    border-width: 1px;
     width: 140px;
     display:inline-block;
     margin: 5px;
     padding: 5px;
     height: 40px;
-    font-size:14px;
+    font-size:16px;
     text-align:center;
 
 }
 
 .module-buttons-red {
     color: white;
-    border-style: round;
     margin: 5px;
     padding: 8px;
     width: 125px;
-    text-align:center;
+    text-align:start;
+    align-items: center;
+    font-size: 17px;
+    height: 40px;
 
 }
 
@@ -322,8 +323,15 @@ border-color:gray;
     background-color: green;
 }
 
+.breadcrumb-style {
+    margin-left: 10px;  
+    top:20px; 
+    position: relative;
+    margin-bottom: -10px;
+}
+
 .student-view-btn {
-    background-color: lightgrey;
+    background-color: rgb(234, 234, 234);
     color: black;
     width: 150px;
     height: 35px;
@@ -331,19 +339,17 @@ border-color:gray;
     margin-top: 5px;
     font-size: 13;
     position: relative;
-    top: -40px;
+    top: -20px;
     border-width: 1px; 
     border-color:darkgray;
 }
 
 .col-4-btn-style {
-    background-color: lightgrey;
+    background-color: rgb(234, 234, 234);
     color: black;
     width: 200px;
     height: 40px;
     margin-top: 10px;
-    font-size: 13;
-  
     right: 40px;
     position: relative;
     border-width: 1px; 
@@ -351,14 +357,13 @@ border-color:gray;
 }
 
 .assignment-group-btn {
-    background-color: lightgrey;
+    background-color: rgb(234, 234, 234);
     color: black;
     width: 100px;
     height: 40px;
-    margin-top: 10px;
-    font-size: 13;
+    font-size: 16;
     position: relative;
-    top: 5%;
+    top: 10%;
     left: 15%;
     border-width: 1px; 
     border-color:darkgray;
