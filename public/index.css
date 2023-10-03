@@ -354,6 +354,7 @@ border-color:gray;
     position: relative;
     border-width: 1px; 
     border-color:darkgray;
+    font-size: 13px;
 }
 
 .assignment-group-btn {
