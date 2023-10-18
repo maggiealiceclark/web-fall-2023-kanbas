@@ -64,6 +64,8 @@
 .spacing {
     padding: 5;
     padding-bottom: 2px;
+    padding-top: 2px;
+
     text-align:center;
     line-height: 0;
     text-align: center;
@@ -92,12 +94,12 @@
  }
  
  .sidebar-text {
-     color:white;
-     background-color:black;
-     padding: 5px;
-     text-indent: 4px;
-     
- }
+    color:white;
+    background-color:black;
+    padding: 5px;
+    text-indent: 4px;
+    
+}
  
  .icon-select {
      color:gray;
@@ -365,7 +367,7 @@ border-color:gray;
     font-size: 16;
     position: relative;
     top: 10%;
-    left: 15%;
+    left: 40%;
     border-width: 1px; 
     border-color:darkgray;
 }
@@ -375,7 +377,7 @@ border-color:gray;
     height: 10px;
     position: relative;
     top: 50%;
-    left: -30%;
+    left: -20%;
     bottom: -15px;
 }
 
@@ -387,7 +389,7 @@ border-color:darkred;
     position: relative;
     top: 5%;
     
-    left: 15%;
+    left: 40%;
 }
 
 .submission-box {

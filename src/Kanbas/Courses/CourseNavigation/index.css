@@ -1,0 +1,20 @@
+.sidebar {
+    color: red;
+    width: '10rem';
+    background-color:"rgb(250,250,250)";
+    text-decoration-color: "black";
+    padding:10;
+    border: "0"
+}
+
+.active {
+    background-color: "rgb(250,250,250)";
+    color: red;
+    border: "0"
+}
+
+.inactive {
+    background-color: black;
+    color: white;
+    border: "0"
+}
