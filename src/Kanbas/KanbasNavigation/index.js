@@ -1,37 +1,73 @@
 import { Link, useLocation } from "react-router-dom";
 import './index.css';
-import {MdAccountCircle} from 'react-icons/md';
-import {BsSpeedometer2} from 'react-icons/bs';
+import { IoPersonCircle } from "react-icons/io5";
+import {
+  AiFillDashboard,
+  AiFillPlayCircle,
+  AiFillQuestionCircle,
+  AiFillClockCircle,
+} from "react-icons/ai";
+import { BiSolidGroup, BiSolidBookBookmark } from "react-icons/bi";
+import {
+  BsFillCalendarEventFill,
+  BsFillArrowRightCircleFill,
+  BsFillInboxFill,
+} from "react-icons/bs";
+import "../images/NU_PMSc_Notched-N_wordmark_RW.png";
+
 
 function KanbasNavigation() {
-  const links = [ <MdAccountCircle style={{fontSize: "50px"}}/>, "Account", 
-  <BsSpeedometer2 style={{fontSize: "30px"}}/>,"Dashboard", "Courses", "Calendar", "Inbox", "History", "Studio", "Commons", "Help"];
+    const logo = <img>style={{marginTop:"20px"}} src={require('../images/NU_PMSc_Notched-N_wordmark_RW.png')}
+    height="200" </img>;
+    const links = [
+        // {label: "", icon: logo},
+            {label: "Account", icon: IoPersonCircle },
+        { label: "Dashboard", icon: AiFillDashboard },
+        { label: "Courses", icon: BiSolidBookBookmark },
+        { label: "Group", icon: BiSolidGroup },
+        { label: "Calendar", icon: BsFillCalendarEventFill },
+        { label: "Inbox", icon: BsFillInboxFill },
+        { label: "History", icon: AiFillClockCircle },
+        { label: "Studio", icon: AiFillPlayCircle },
+        { label: "Commons", icon: BsFillArrowRightCircleFill },
+        { label: "Help", icon: AiFillQuestionCircle },
+        {label: " ", icon: "none"},
+        {label: " ", icon: "none"},
+        {label: " ", icon: "none"},
+        {label: " ", icon: "none"},
+        {label: " ", icon: "none"},
+      ];
   const { pathname } = useLocation();
 //   const Icon = icons[ <MdAccountCircle style={{fontSize: "50px"}}/>]
 
   return (
     
     <div bg="dark"  className="list-group wd-kanbas-navigator" >
-      
+     <img style={{textAlign:'center', padding:"20px"}} src={require('../images/NU_PMSc_Notched-N_wordmark_RW.png')} alt="NU Logo" />
       {links.map((link, index) => (
-        
-       
+    
         <Link 
           key={index}
-          to={`/Kanbas/${link}`}
+          to={`/Kanbas/${link.label}`}
           style={{
             
-            margin: 7,
             textDecoration: "none",
-            
-            padding: 10,
+            padding:"20px",
+            paddingRight: "0px",
             textAlign: "center",
-            color: pathname.includes(link) ? "red" : "white",
-            background: pathname.includes(link) ? "white" : "black"
+            color: pathname.includes((link.label) || (link.icon) ) ? "red" : "white",
+            background: pathname.includes((link.label) || (link.icon)) ? "white" : "black"
           }}
          >
-       
-          {link}
+       <div className="kanbas-navigation-icon"
+       >
+            <link.icon style={{fontSize:"30px"}}/>
+          </div>
+          <div className="kanbas-navigation-label"
+           >
+            {link.label
+            }
+            </div>
         </Link>
       ))}
       

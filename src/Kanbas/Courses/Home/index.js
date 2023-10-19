@@ -61,7 +61,7 @@ function Home() {
       <hr />
       <ul>
         <li>
-          <a href="./" className="link-style" style={{color:"rgb(250, 0,0)"}}>
+          <a href="./Modules" className="link-style" style={{color:"rgb(250, 0,0)"}}>
             <AiOutlineCalendar/> Grade A1- ENV + HTML
           </a>
           100 points Sept 18 at 11:59 pm

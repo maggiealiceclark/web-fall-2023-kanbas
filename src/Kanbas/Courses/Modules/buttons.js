@@ -10,7 +10,7 @@ import {AiOutlinePlus} from 'react-icons/ai';
 
 function Buttons() {
   return (
-    <ButtonToolbar aria-label="Toolbar with button groups" style={{padding: 15, marginTop:20}} >
+    <ButtonToolbar aria-label="Toolbar with button groups" style={{padding: 15, marginTop:30}} >
       <ButtonGroup className="me-2" aria-label="First group">
         <Button variant="secondary" style={{backgroundColor: "#d3d3d3", color:"black"}}>Collapse All</Button> 
       </ButtonGroup>

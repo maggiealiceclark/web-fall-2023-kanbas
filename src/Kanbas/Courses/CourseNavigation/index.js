@@ -19,7 +19,10 @@ const inactiveLink = "text-white bg-black";
           style={{
             color: pathname.includes(link) ? "black" : "red",
             background: pathname.includes(link) ? "white" : "white",
-            borderRight: pathname.includes(link) ? "black" : "none",
+            borderLeftColor: pathname.includes(link) ? "black" : "black",
+            borderLeftWidth: pathname.includes(link) ? "3px": "3px",
+            borderLeftStyle: pathname.includes(link) ? "solid" : "none",
+            padding: 10,
             margin: 10,
             textDecoration: "none"
           }}

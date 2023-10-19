@@ -10,11 +10,10 @@
   .wd-kanbas-navigator {
     background-color: black !important;
     /* color: white; */
-    padding: 20px;
+
     width: 150px;
     height: 1000px;
     top: -30px;
-    border-radius: 0px;
   }
   
   .wd-kanbas-navigator li {

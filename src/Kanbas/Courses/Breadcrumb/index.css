@@ -1,0 +1,14 @@
+.boxhead a {
+    color: danger;
+    text-decoration: none !important;
+}
+
+.boxheaded:link {
+    padding: 10;
+     font-size: 20;
+      color: 'black';
+       margin-left: '-10px';
+        margin-bottom: '8px';
+         margin-top: '5px';
+          text-decoration: 'none'!important;
+}
