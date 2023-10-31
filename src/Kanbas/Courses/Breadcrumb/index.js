@@ -4,13 +4,12 @@ import { Link, useParams, useLocation } from "react-router-dom";
 import {MdOutlineStorage} from 'react-icons/md';
 
 function BreadcrumbCourse() {
-  const { courseId } = useParams();
   const { pathname } = useLocation();
   const pathParts = pathname.split("/");
     
   return (
     <>
-    <Breadcrumb style={{textDecoration:"none"}}>
+    <Breadcrumb >
     
 <Breadcrumb.Item className='boxhead'>
       <h1 className='boxheaded' style={{padding: 10, fontSize: 20, color: 'red', textDecoration: 'none' , marginTop: '8px' }}>

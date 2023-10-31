@@ -11,7 +11,6 @@ import Spread from "./Spread.js";
 import Destructing from "./Destructing";
 import FunctionDestructing from "./FunctionDestructing";
 import Add from "./Add";
-import PathParameters from "./PathParameters";
 
 function JavaScript() {
    console.log('Hello World!');
@@ -31,7 +30,6 @@ function JavaScript() {
          <Destructing/>
          <FunctionDestructing/>
          <Add/>
-         <PathParameters/>
       </div>
    );
 }

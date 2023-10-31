@@ -12,7 +12,7 @@ function AssignmentEditor() {
         position:"relative", left:"80%"
       };
       const saveButtonStyle = {
-        backgroundColor: '#FF0000', // Light gray
+        backgroundColor: '#FF0000', // red
         color: 'black',
         position:"relative", left:"81%"
       };

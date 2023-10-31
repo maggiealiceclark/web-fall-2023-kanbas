@@ -11,6 +11,7 @@ import ObjectStateVariable from "./ObjectStateVariable";
 import ArrayStateVariable from "./ArrayStateVariable";
 import ParentStateComponent from "./ParentStateComponent";
 import ChildStateComponent from "./ChildStateComponent";
+import ReduxExamples from "./ReduxExamples";
 function Assignment4() {
   function sayHello() {
     alert("Hello");
@@ -31,7 +32,7 @@ function Assignment4() {
       <ArrayStateVariable />
       <ParentStateComponent />
       <ChildStateComponent />
-      ...
+      <ReduxExamples/>
     </div>
   );
 }
