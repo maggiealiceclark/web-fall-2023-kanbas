@@ -51,7 +51,10 @@ function Dashboard({
 
         <Button
           variant="danger"
-          onClick={addNewCourse}
+          onClick={(event) => {
+            event.preventDefault();
+            addNewCourse(course._id);
+          }}
           style={{ margin: "10px", float: "right" }}
         >
           Add
@@ -64,7 +67,10 @@ function Dashboard({
             backgroundColor: "#d3d3d3",
             color: "black",
           }}
-          onClick={updateCourse}
+          onClick={(event) => {
+            event.preventDefault();
+            updateCourse(course._id);
+          }}
         >
           Update
         </Button>
@@ -96,7 +102,7 @@ function Dashboard({
                       }}
                       onClick={(event) => {
                         event.preventDefault();
-                        setCourse(course);
+                        setCourse(course._id);
                       }}
                     >
                       Edit

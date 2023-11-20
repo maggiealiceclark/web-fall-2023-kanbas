@@ -6,6 +6,7 @@ function PassingFunctions({ theFunction }) {
                 onClick={theFunction}>
           Invoke the Function
         </button>
+        
       </div>
     );
   }

@@ -7,17 +7,34 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import BreadcrumbCourse from "./Breadcrumb";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-function Courses({ courses }) {
+function Courses() {
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+  const URL = "http://localhost:4000/api/courses";
+  const [course, setCourse] = useState({});
+  const findCourseById = async (course_id) => {
+  
+    const response = await axios.get(
+      `${URL}/${course_id}`
+    );
+    setCourse(response.data);
+    console.log(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
+
   return (
     <div>
         <BreadcrumbCourse/>
       <hr style={{width: 1200}}/>
       <CourseNavigation />
       <div>
-        <div     className="overflow-y-scroll position-fixed bottom-0 end-0"
+        <div
+        className="overflow-y-scroll position-fixed bottom-0 end-0"
           style={{
             left: "320px",
             top: "50px",

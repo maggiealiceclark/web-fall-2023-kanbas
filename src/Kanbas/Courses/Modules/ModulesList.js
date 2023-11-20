@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./index.css";
 import Button from "react-bootstrap/Button";
@@ -8,22 +8,50 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 import { useSelector, useDispatch } from "react-redux";
 import {
   addModule,
-  deleteModule,
   updateModule,
   setModule,
+  setModules,
+  deleteModule as deleteModuleAction,
 } from "./modulesReducer";
+import {findModulesForCourse, createModule} from "./client";
+import * as client from "./client";
 function ModuleList() {
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      if (status === 200) {
+        // Dispatch the deleteModule action after successful deletion
+        dispatch(deleteModuleAction(moduleId));
+      } else {
+        // Handle other status codes or errors if needed
+      }
+    });
+  };
+
+  
+
   const { courseId } = useParams();
+  useEffect(() => {
+    findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
+
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
+  const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+
   return (
     <ul className="list-group ">
       <li className="list-group-item" style={{height:"150px", width:"560px"}}>
         <Button
           variant="danger"
-          onClick={() => dispatch(addModule({ ...module, course: courseId }))}
-        >
+          onClick={handleAddModule}>
           Add
         </Button>
         <Button
@@ -103,8 +131,8 @@ function ModuleList() {
             <Button variant="danger" style={{margin:"5px"}} onClick={() => dispatch(setModule(module))}>Edit</Button>
             <Button variant="secondary"
           style={{ margin: "10px", backgroundColor: "#d3d3d3", color: "black" }}
-         onClick={() => dispatch(deleteModule(module._id))}>
-              Delete
+          onClick={() => handleDeleteModule(module._id)}
+          >              Delete
             </Button>
 
             <Card

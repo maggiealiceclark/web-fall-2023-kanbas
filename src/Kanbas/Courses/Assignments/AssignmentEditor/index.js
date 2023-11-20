@@ -40,12 +40,14 @@ function AssignmentEditor() {
     <div>
       <h2 style={{ padding: 0, marginTop: 50 }}>Assignment Name</h2>
       <textarea
-      value={assignment.title}
         className="form-control mb-2"
         style={{ width: 560 }}
+        value={assignment.title}
+        onChange={(e) =>
+          dispatch(selectAssignment({ ...assignment, title: e.target.value }))
+        }
       />
       <textarea
-        value={assignment.description}
         style={{
           position: "relative",
           left: -10,
@@ -56,10 +58,12 @@ function AssignmentEditor() {
         }}
         label="Assignment Name"
         className="form-control mb-2"
+        value={assignment.description}
         onChange={(e) =>
-          dispatch(updateAssignment({ ...assignment, name: e.target.value }))
+          dispatch(selectAssignment({ ...assignment, description: e.target.value }))
         }
       />
+       
       <h3
         style={{
           position: "relative",
@@ -83,7 +87,6 @@ function AssignmentEditor() {
         Points:
       </h6>
       <input
-        value={assignment.points}
         style={{
           position: "relative",
           left: -10,
@@ -95,8 +98,9 @@ function AssignmentEditor() {
         label="Points"
         title="Points"
         className="form-control mb-2"
+        value={assignment.points}
         onChange={(e) =>
-          dispatch(updateAssignment({ ...assignment, name: e.target.value }))
+          dispatch(selectAssignment({ ...assignment, points: e.target.value }))
         }
       />
       <ul className="list-group " style={{ position: "relative", top: "0" }}>
@@ -176,12 +180,7 @@ function AssignmentEditor() {
         className="btn btn-danger me-2"
         style={saveButtonStyle}
       >
-          <Link
-              key={assignment._id}
-              to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
-              className="list-group-item"
-              style={{ border: "none", fontSize: "20px" }}
-            ></Link>
+     
         Save
       </button>
     </div>
