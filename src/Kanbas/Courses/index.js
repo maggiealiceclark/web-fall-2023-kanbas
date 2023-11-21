@@ -14,13 +14,14 @@ function Courses() {
   const { courseId } = useParams();
   const URL = "http://localhost:4000/api/courses";
   const [course, setCourse] = useState({});
-  const findCourseById = async (course_id) => {
-  
+  const findCourseById = async (courseId) => {
+    console.log("getting course id: " + courseId);
+
     const response = await axios.get(
-      `${URL}/${course_id}`
+      `${URL}/${courseId}`
     );
     setCourse(response.data);
-    console.log(response.data);
+    console.log(courseId);
   };
   useEffect(() => {
     findCourseById(courseId);

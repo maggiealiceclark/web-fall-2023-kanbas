@@ -69,6 +69,7 @@ function Dashboard({
           }}
           onClick={(event) => {
             event.preventDefault();
+
             updateCourse(course._id);
           }}
         >
@@ -102,7 +103,7 @@ function Dashboard({
                       }}
                       onClick={(event) => {
                         event.preventDefault();
-                        setCourse(course._id);
+                        setCourse({...course});
                       }}
                     >
                       Edit

@@ -10,7 +10,7 @@ import axios from "axios";
 function Kanbas() {
   // const [courses, setCourses] = useState(db.courses);
   const [courses, setCourses] = useState([]);
-  const [course, setCourse] = useState({ name: "" });
+  const [course, setCourse] = useState({ name: "New Course", number: "Course Number", startDate: "", endDate: ""});
   
   const URL = "http://localhost:4000/api/courses";
   const deleteCourse = async (course_id) => {
@@ -58,10 +58,11 @@ function Kanbas() {
       `${URL}/${course._id}`,
       course
     );
+
     setCourses(
       courses.map((c) => {
         if (c._id === course._id) {
-          return response.data;
+          return course;
         }
         return c;
       })
