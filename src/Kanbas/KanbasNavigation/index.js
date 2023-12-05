@@ -21,7 +21,8 @@ function KanbasNavigation() {
     height="200" </img>;
     const links = [
         // {label: "", icon: logo},
-            {label: "Account", icon: IoPersonCircle },
+            {label: "Signin", icon: IoPersonCircle },
+            {label: "Signup", icon: IoPersonCircle },
         { label: "Dashboard", icon: AiFillDashboard },
         { label: "Courses", icon: BiSolidBookBookmark },
         { label: "Group", icon: BiSolidGroup },
